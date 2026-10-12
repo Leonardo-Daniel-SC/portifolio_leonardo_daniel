@@ -2,6 +2,12 @@
 
 Este portfólio foi desenvolvido para apresentar minha trajetória na tecnologia, meus conhecimentos, projetos e formas de contato. A interface conta com um design moderno, animações, navegação por seções e layout responsivo.
 
+<p align="start">
+  <a href="https://leonardo-daniel-sc.github.io/portifolio_leonardo_daniel/">
+    <img src="https://img.shields.io/badge/🗂️%20Acessar%20o%20portifólio-000000?style=for-the-badge" alt="Acessar o Portifólio">
+  </a>
+</p>
+
 ### ✨ Funcionalidades
 
 - Apresentação pessoal e trajetória profissional.
