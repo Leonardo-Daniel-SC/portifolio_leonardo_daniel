@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leonardo Daniel</title>
+    <meta name="description" content="Portfólio de desenvolvedor Back-end: sobre mim, projetos, tecnologias e contato.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="wrap header__bar">
+            <a class="brand" href="#inicio" aria-label="Seu Nome, ir para o início">
+                <span class="brand__mark">LD</span>
+                <span>Leonardo Daniel</span>
+            </a>
+            <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="nav">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 8h16M4 16h16" />
+                </svg>
+            </button>
+            <nav class="nav" id="nav" aria-label="Principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
+            <div class="hero__media" data-reveal="scale" style="--d:.2s">
+                <div class="photo">
+                    <div class="photo__frame">
+                        <img src="./assets/images/perfil2.png" alt="perfil">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+            <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+            <div class="wrap hero__grid">
+                <div class="hero__copy">
+                    <p class="eyebrow" data-reveal>Olá, eu sou Leonardo Daniel</p>
+                    <h1 class="hero__title" data-reveal style="--d:.12s"
+                        aria-label="Desenvolvedor Back-end. Crio experiências digitais. Transformo ideias em interfaces.">
+                        <span class="typed" id="typed">Desenvolvedor Back-end.</span>
+                    </h1>
+                    <p class="hero__text" data-reveal style="--d:.24s">
+                        Desde muito novo sou fascinado por computadores e pela capacidade que a tecnologia tem de
+                        transformar ideias em soluções reais. Por isso, hoje estou focado em construir uma carreira como
+                        Desenvolvedor Backend, desenvolvendo projetos, aprendendo novas tecnologias e evoluindo um pouco
+                        a cada dia.
+                    </p>
+                    <a class="btn" href="./assets/Leonardo Daniel da Silva Costa.pdf" download data-reveal
+                        style="--d:.36s">
+                        Baixar currículo
+                        <svg class="icon icon--shift" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
+                        </svg>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section" id="sobre">
+            <div class="wrap">
+                <header class="section__head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Sobre mim</p>
+                        <h2 class="title" data-reveal="mask"><span class="mask"><span class="mask__inner">Um pouco da
+                                    minha <em>história</em></span></span></h2>
+                    </div>
+                    <p class="lead" data-reveal style="--d:.15s">Uma visão rápida de como comecei, o que faço e o que me
+                        motiva a continuar aprendendo.</p>
+                </header>
+
+                <div class="grid-4 sobre" data-stagger="0.1">
+                    <article class="card card--text" data-reveal>
+                        <h3>Minha história</h3>
+                        <p>Comecei a programar por curiosidade e logo percebi que gostava de ver ideias ganhando forma
+                            na tela. Desde então estudo e construo projetos que me fazem evoluir a cada dia.</p>
+                    </article>
+                    <article class="card card--text" data-reveal>
+                        <h3>O que eu faço</h3>
+                        <p>Curso Engenharia de Software na FIAP. Tenho me dedicado ao desenvolvimento das minhas habilidades em programação, com conhecimentos em Java, Python, React, JavaScript, Git e toda lógica de programação.</p>
+                    </article>
+                    <article class="card card--text" data-reveal>
+                        <h3>Como eu trabalho</h3>
+                        <p>Gosto de entender o problema antes de pensar na solução, isso por conta da minha experiência com
+                            orientação a objetos, bancos de dados, métodos ágeis e desenvolvimento de sistemas.</p>
+                    </article>
+                    <article class="card card--text" data-reveal>
+                        <h3>O que me move</h3>
+                        <p>Aprender coisas novas, resolver problemas reais e trabalhar ao lado de pessoas que se
+                            importam com a qualidade do que entregam.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="section" id="projetos">
+            <div class="wrap">
+                <header class="section__head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Projetos</p>
+                        <h2 class="title" data-reveal="mask"><span class="mask"><span class="mask__inner">Trabalhos que <em>contam</em> a minha jornada</span></span></h2>
+                    </div>
+                    <p class="lead" data-reveal style="--d:.15s">Alguns projetos que mostram como eu trabalho.</p>
+                </header>
+
+                <div class="projects">
+                    <div class="grid-2" data-stagger="0.12">
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/controleDeEstoque.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Controle de Estoque</h3>
+                                <p>Sistema de Controle de Estoque desenvolvido em Python com banco de dados SQLite.</p>
+                                <div class="tags"><span class="tag">Python</span><span class="tag">SQLite</span><span
+                                        class="tag">Xcel</span></div>
+                                <a class="link-arrow" href="https://github.com/Leonardo-Daniel-SC/controle-estoque-python">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/arduino.png" alt="">
+                            </div>
+                            <div class="project__body">
+                                <h3>Astrolab em Arduino</h3>
+                                <p>Sistema embarcado desenvolvido em Arduino para monitoramento de ambiente em missões
+                                    espaciais.</p>
+                                <div class="tags"><span class="tag">Arduino</span><span class="tag">Wokwi</span><span
+                                        class="tag">C++</span></div>
+                                <a class="link-arrow" href="https://github.com/Leonardo-Daniel-SC/AstroLab">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="grid-2" id="more-projects" data-stagger="0.1" hidden>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/controle_lampada.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Smart Lamp</h3>
+                                <p>Sistema de controle e monitoramento de uma lâmpada inteligente utilizando ESP32,
+                                    MQTT, FIWARE, React e AWS.</p>
+                                <div class="tags"><span class="tag">ESP32</span><span class="tag">AWS</span><span
+                                        class="tag">React</span></div>
+                                <a class="link-arrow" href="https://github.com/Leonardo-Daniel-SC/controle_lampada">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/Gerenciador_tarefas.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Gerenciador de Tarefas</h3>
+                                <p>Página desenvolvida em React para criação e gerenciamento de tarefas.</p>
+                                <div class="tags"><span class="tag">React</span><span
+                                        class="tag">LocalStorage</span><span class="tag">Vite</span></div>
+                                <a class="link-arrow" href="https://github.com/Leonardo-Daniel-SC/Gerenciador-de-Tarefas">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/numero-secreto.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Jogo do Número Secreto</h3>
+                                <p>Um jogo simples desenvolvido com HTML, CSS e JavaScript, onde o objetivo é adivinhar
+                                    o número secreto gerado aleatoriamente pelo sistema.</p>
+                                <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                                        class="tag">JavaScript</span></div>
+                                <a class="link-arrow" href="https://github.com/Leonardo-Daniel-SC/Jogo-numero-secreto">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/NovaCore.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Página NovaCore</h3>
+                                <p>Página para apresentar uma empresa, com identidade visual consistente, animações
+                                    suaves e boas práticas de responsividade.</p>
+                                <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                                        class="tag">SEO</span>
+                                </div>
+                                <a class="link-arrow" href="https://leonardo-daniel-sc.github.io/FrontEnd_CP5/Responsividade/index.html">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/Cafe.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Página GrãoNobre</h3>
+                                <p>Página desenvolvida para aprender o framework Bootstrap de forma prática.</p>
+                                <div class="tags"><span class="tag">Bootstrap</span><span
+                                        class="tag">Framework</span><span class="tag">UX</span></div>
+                                <a class="link-arrow" href="https://leonardo-daniel-sc.github.io/FrontEnd_CP5/Bootstrap/index.html">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                        <article class="card project" data-reveal>
+                            <div class="project__media">
+                                <img src="./assets/images/Xbox.png" alt="Capa do projeto">
+                            </div>
+                            <div class="project__body">
+                                <h3>Xbox GamePass</h3>
+                                <p>Página desenvolvida com foco em praticar o framework Tailwind.</p>
+                                <div class="tags"><span class="tag">Tailwind</span><span
+                                        class="tag">Framework</span><span class="tag">UX</span></div>
+                                <a class="link-arrow" href="https://leonardo-daniel-sc.github.io/FrontEnd_CP5/Tailwind/index.html">Ver projeto <svg class="icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path d="M7 17L17 7M8 7h9v9" />
+                                    </svg></a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="projects__more" data-reveal>
+                        <button class="btn btn--ghost" id="toggle-projects" type="button" aria-expanded="false"
+                            data-expand-only aria-controls="more-projects">
+                            <span id="toggle-label">Ver mais projetos</span>
+                            <svg class="icon icon--chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section class="section section--alt" id="tecnologias">
+            <div class="wrap">
+                <header class="section__head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Tecnologias</p>
+                        <h2 class="title" data-reveal="mask"><span class="mask"><span class="mask__inner">Ferramentas do
+                                    meu <em>dia a dia</em></span></span></h2>
+                    </div>
+                    <p class="lead" data-reveal style="--d:.15s">Linguagens e ferramentas que utilizo.</p>
+                </header>
+
+                <div class="grid-4" data-stagger="0.07">
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" />
+                            </svg>
+                        </span>
+                        <h3>HTML5</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z" />
+                            </svg>
+                        </span>
+                        <h3>CSS3</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4C339.8 489 314.2 508.9 276.9 508.9zM362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9C400.3 508.9 375 490.3 362.7 465.9z" />
+                            </svg>
+                        </span>
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M482.2 241.2C476.8 239.4 471.4 237.7 466 236.1C466.9 232.4 467.7 228.7 468.5 225C480.8 165.4 472.7 117.5 445.4 101.7C419.1 86.6 376.2 102.3 332.8 140.1C328.5 143.8 324.3 147.7 320.3 151.6C317.6 149 314.8 146.4 312 143.9C266.5 103.5 220.9 86.5 193.6 102.4C167.4 117.6 159.6 162.7 170.6 219.1C171.7 224.7 172.9 230.2 174.3 235.8C167.9 237.6 161.6 239.6 155.7 241.7C102.3 260.2 64 289.4 64 319.6C64 350.8 104.8 382.1 160.3 401.1C164.8 402.6 169.3 404.1 173.9 405.4C172.4 411.4 171.1 417.3 169.9 423.4C159.4 478.9 167.6 522.9 193.8 538C220.8 553.6 266.2 537.6 310.4 498.9C313.9 495.8 317.4 492.6 320.9 489.2C325.3 493.5 329.9 497.6 334.5 501.6C377.3 538.4 419.6 553.3 445.7 538.2C472.7 522.6 481.5 475.3 470.1 417.7C469.2 413.3 468.2 408.8 467.1 404.2C470.3 403.3 473.4 402.3 476.5 401.3C534.2 382.2 576 351.3 576 319.6C576 289.3 536.6 259.9 482.2 241.2zM346.9 156.3C384.1 123.9 418.8 111.2 434.6 120.3C451.5 130 458 169.2 447.4 220.7C446.7 224.1 446 227.4 445.1 230.7C422.9 225.7 400.4 222.1 377.8 220.1C364.8 201.5 350.6 183.7 335.2 167C339.1 163.3 342.9 159.8 346.9 156.3zM231.2 371.5C236.3 380.2 241.5 388.9 247 397.4C231.4 395.7 215.9 393.2 200.6 389.9C205 375.5 210.5 360.6 216.9 345.4C221.5 354.2 226.2 362.9 231.2 371.5zM200.9 251.2C215.3 248 230.6 245.4 246.5 243.4C241.2 251.7 236 260.2 231.1 268.8C226.2 277.3 221.4 286 216.9 294.8C210.6 279.9 205.3 265.3 200.9 251.2zM228.3 320.1C234.9 306.3 242.1 292.8 249.7 279.5C257.3 266.2 265.5 253.3 274.1 240.6C289.1 239.5 304.4 238.9 320 238.9C335.6 238.9 351 239.5 365.9 240.6C374.4 253.2 382.5 266.1 390.2 279.3C397.9 292.5 405.1 306 411.9 319.7C405.2 333.5 398 347.1 390.3 360.5C382.7 373.8 374.6 386.7 366.1 399.5C351.2 400.6 335.7 401.1 320 401.1C304.3 401.1 289.1 400.6 274.4 399.7C265.7 387 257.5 374 249.8 360.7C242.1 347.4 235 333.9 228.3 320.1zM408.9 371.3C414 362.5 418.8 353.6 423.5 344.6C429.9 359.1 435.5 373.8 440.4 388.9C424.9 392.4 409.2 395.1 393.4 396.9C398.8 388.5 403.9 379.9 408.9 371.3zM423.3 294.8C418.6 286 413.8 277.2 408.8 268.6C403.9 260.1 398.8 251.7 393.5 243.4C409.6 245.4 425 248.1 439.4 251.4C434.8 266.2 429.4 280.6 423.3 294.8zM320.2 182.3C330.7 193.7 340.6 205.7 349.8 218.1C330 217.2 310.1 217.2 290.3 218.1C300.1 205.2 310.2 193.2 320.2 182.3zM204.2 121C221 111.2 258.3 125.2 297.6 160C300.1 162.2 302.6 164.6 305.2 167C289.7 183.7 275.4 201.5 262.3 220.1C239.7 222.1 217.3 225.6 195.1 230.5C193.8 225.4 192.7 220.2 191.6 215C182.2 166.6 188.4 130.1 204.2 121zM179.7 384.6C175.5 383.4 171.4 382.1 167.3 380.7C146 374 121.8 363.4 104.3 349.5C94.2 342.5 87.4 331.7 85.5 319.6C85.5 301.3 117.1 277.9 162.7 262C168.4 260 174.2 258.2 180 256.5C186.8 278.2 195 299.5 204.5 320.1C194.9 341 186.6 362.6 179.7 384.6zM296.3 482.6C279.8 497.7 260.7 509.7 239.9 517.9C228.8 523.2 216 523.7 204.6 519.2C188.7 510 182.1 474.7 191.1 427.2C192.2 421.6 193.4 416 194.8 410.5C217.2 415.3 239.8 418.6 262.7 420.3C275.9 439 290.4 456.9 305.9 473.7C302.7 476.8 299.5 479.8 296.3 482.6zM320.8 458.3C310.6 447.3 300.4 435.1 290.5 422C300.1 422.4 310 422.6 320 422.6C330.3 422.6 340.4 422.4 350.4 421.9C341.2 434.6 331.3 446.7 320.8 458.3zM451.5 488.3C450.6 500.5 444.6 511.9 435 519.6C419.1 528.8 385.2 516.8 348.6 485.4C344.4 481.8 340.2 477.9 335.9 473.9C351.2 457 365.3 439.1 378.1 420.3C401 418.4 423.8 414.9 446.3 409.8C447.3 413.9 448.2 418 449 422C453.9 443.6 454.7 466.1 451.5 488.3zM469.7 380.8C466.9 381.7 464.1 382.6 461.2 383.4C454.2 361.6 445.6 340.3 435.7 319.6C445.3 299.2 453.4 278.2 460.2 256.7C465.4 258.2 470.4 259.8 475.2 261.4C521.8 277.4 554.5 301.2 554.5 319.4C554.5 339 519.6 364.3 469.7 380.8zM320 365.8C345.3 365.8 365.8 345.3 365.8 320C365.8 294.7 345.3 274.2 320 274.2C294.7 274.2 274.2 294.7 274.2 320C274.2 345.3 294.7 365.8 320 365.8z" />
+                            </svg>
+                        </span>
+                        <h3>React</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M535.8 264.5C528.1 233.6 513.5 210.3 482.4 210.3L442.3 210.3L442.3 257.7C442.3 294.5 411.1 325.5 375.5 325.5L268.7 325.5C239.5 325.5 215.3 350.5 215.3 379.8L215.3 481.6C215.3 510.6 240.5 527.6 268.7 535.9C302.5 545.8 335 547.6 375.5 535.9C402.4 528.1 428.9 512.4 428.9 481.6L428.9 440.9L322.2 440.9L322.2 427.3L482.4 427.3C513.5 427.3 525 405.6 535.8 373.1C547 339.6 546.5 307.4 535.8 264.5zM382.2 508.7C374.6 509.2 367.3 505.5 363.3 499C359.4 492.4 359.4 484.3 363.3 477.7C367.3 471.2 374.6 467.5 382.2 468C389.8 467.5 397.1 471.2 401.1 477.7C405 484.3 405 492.4 401.1 499C397.1 505.5 389.8 509.2 382.2 508.7zM263.8 312.1L370.6 312.1C400.3 312.1 424 287.6 424 257.8L424 155.9C424 126.9 399.6 105.2 370.6 100.3C334.8 94.4 295.9 94.7 263.8 100.4C218.6 108.4 210.4 125.1 210.4 156L210.4 196.7L317.3 196.7L317.3 210.3L170.3 210.3C139.2 210.3 112 229 103.5 264.5C93.7 305.2 93.3 330.6 103.5 373.1C111.1 404.7 129.2 427.3 160.3 427.3L197 427.3L197 378.5C197 343.2 227.5 312.1 263.8 312.1zM257.2 128.7C268.5 128.7 277.6 137.8 277.6 149.1C277.6 160.4 268.5 169.5 257.2 169.5C245.9 169.5 236.8 160.4 236.8 149.1C236.8 137.8 245.9 128.7 257.2 128.7z" />
+                            </svg>
+                        </span>
+                        <h3>Python</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -120 900 900" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M544 269.8C529.2 279.6 512.2 287.5 494.5 293.8C447.5 310.6 385.8 320 320 320C254.2 320 192.4 310.5 145.5 293.8C127.9 287.5 110.8 279.6 96 269.8L96 352C96 396.2 196.3 432 320 432C443.7 432 544 396.2 544 352L544 269.8zM544 192L544 144C544 99.8 443.7 64 320 64C196.3 64 96 99.8 96 144L96 192C96 236.2 196.3 272 320 272C443.7 272 544 236.2 544 192zM494.5 453.8C447.6 470.5 385.9 480 320 480C254.1 480 192.4 470.5 145.5 453.8C127.9 447.5 110.8 439.6 96 429.8L96 496C96 540.2 196.3 576 320 576C443.7 576 544 540.2 544 496L544 429.8C529.2 439.6 512.2 447.5 494.5 453.8z" />
+                            </svg>
+                        </span>
+                        <h3>SQL</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 800 800" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M535.6 300.1L340 104.5C334.6 99 327.2 96 319.6 96C312 96 304.6 99 299.2 104.4L258.5 145L310 196.5C337.1 187.4 362.7 213.3 353.4 240.2L403.1 289.9C437.3 278.1 464.3 320.9 438.6 346.6C412.1 373.1 368.4 343.7 382.6 309.3L336.3 263L336.3 384.9C361.6 397.4 358.6 426.7 345.4 439.9C339 446.3 330.2 450 321.1 450C312 450 303.3 446.4 296.8 439.9C279.2 422.3 285.7 393 308 383.9L308 260.9C287.2 252.4 283.4 230.2 289.4 215.9L238.6 165L104.5 299.1C99 304.6 96 311.9 96 319.5C96 327.1 99 334.5 104.5 339.9L300.1 535.6C305.5 541 312.8 544 320.5 544C328.2 544 335.5 541 340.9 535.6L535.6 340.9C541 335.5 544 328.1 544 320.5C544 312.9 541 305.5 535.6 300.1z" />
+                            </svg>
+                        </span>
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="mini" data-reveal="scale">
+                        <span class="mini__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -120 900 900" fill="currentColor"
+                                stroke="currentColor">
+                                <path
+                                    d="M180.4 267C179.7 289.6 191 299.7 191.3 306C191.2 307.3 190.7 308.5 190 309.6C189.3 310.7 188.3 311.6 187.2 312.2L174.4 321.2C172.7 322.4 170.8 323 168.8 323.1C168.4 323.1 160.6 324.9 148.3 297.5C140.8 306.9 131.3 314.4 120.4 319.5C109.5 324.6 97.7 327.2 85.7 327C69.4 327.9 25.3 317.8 27.6 270.8C26 232.5 61.7 208.7 98.5 210.8C105.6 210.8 120.1 211.2 145.5 217.1L145.5 201.5C148.2 175 130.8 154.5 100.7 157.6C98.3 157.6 81.3 157.1 54.9 167.7C47.5 171.1 46.6 170.5 44.1 170.5C36.7 170.5 39.7 149 41.2 146.3C46.4 139.9 77.1 127.9 107.1 128.1C127.2 126.3 147.2 132.5 162.8 145.4C169.1 152.5 174 160.8 177 169.8C180 178.8 181.2 188.3 180.5 197.8L180.5 267.1zM94 299.4C126.4 298.9 140.2 279.4 143.3 268.9C145.8 258.8 145.4 252.5 145.4 241.5C135.7 239.2 121.8 236.6 105.8 236.6C90.6 235.5 63 242.2 64.1 268.9C62.9 285.7 75.2 300.3 94.1 299.4zM264.9 322.5C257 323.2 253.4 317.6 252.2 312.1L202.4 147.4C201.4 144.6 200.8 141.8 200.5 138.8C200.3 137.6 200.6 136.4 201.3 135.4C202 134.4 203.1 133.8 204.3 133.6C204.5 133.6 202.2 133.6 226.5 133.6C235.3 132.7 238.1 139.6 239.1 144L274.9 284.8L308.1 144C308.6 140.8 311 132.9 320.9 133.8L338.1 133.8C340.3 133.6 349.2 133.3 350.8 144.2L384.1 286.7L421 144.1C421.5 141.9 423.7 132.7 433.7 133.7L453.4 133.7C454.3 133.6 459.6 132.9 458.7 142.3C458.3 144.1 462.1 131.6 405.9 312.2C404.8 317.7 401.1 323.3 393.2 322.6L374.5 322.6C363.6 323.8 362 312.9 361.8 311.9L328.6 174.8L295.8 311.8C295.6 312.9 294.1 323.7 283.1 322.5L264.8 322.5L264.8 322.5zM538.4 328.1C532.5 328.1 504.5 327.8 481 315.8C478.7 314.8 476.7 313.2 475.3 311C473.9 308.8 473.2 306.4 473.2 303.9L473.2 293.2C473.2 284.7 479.4 286.3 482 287.3C492 291.4 498.5 294.4 510.8 296.9C547.5 304.4 563.6 294.6 567.5 292.4C580.7 284.6 581.7 266.7 572.8 257.5C562.3 248.7 557.3 248.4 519.7 236.5C515.1 235.2 476 222.9 475.9 184.1C475.3 155.9 500.9 127.9 545.4 128.1C558.1 128.1 591.8 132.2 601 143.7C602.4 145.8 603 148.3 602.9 150.7L602.9 160.8C602.9 165.2 601.3 167.5 598 167.5C590.3 166.6 576.6 156.3 548.8 156.7C541.9 156.3 508.9 157.6 510.4 181.7C510 200.7 537 207.8 540.1 208.6C576.6 219.6 588.7 221.4 603.2 238.2C620.3 260.4 611.1 286.5 607.5 293.6C588.4 331.1 539.1 328 538.2 328zM578.6 433C508.6 484.7 406.9 512.2 320.1 512.2C203 513 89.8 469.9 2.8 391.5C-3.7 385.6 2 377.5 10 382C106.5 437.2 215.7 466.2 326.9 466.1C409.9 465.7 492 448.8 568.5 416.6C580.3 411.6 590.3 424.4 578.6 433zM607.8 399.7C598.8 388.2 548.5 394.3 526 397C519.2 397.8 518.1 391.9 524.2 387.5C564.3 359.3 630.1 367.4 637.6 376.9C645.1 386.4 635.5 452.3 598 483.8C592.2 488.7 586.7 486.1 589.3 479.7C597.7 458.4 616.7 411.2 607.7 399.7z" />
+                            </svg>
+                        </span>
+                        <h3>AWS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section" id="contato">
+            <div class="wrap">
+                <div class="contact__panel" data-reveal="scale">
+                    <div class="contact__intro">
+                        <p class="eyebrow">Contato</p>
+                        <h2 class="title" style="margin-top:0">Vamos <em>conversar</em>?</h2>
+                    </div>
+
+                    <div class="contact__list" data-stagger="0.08">
+                        <a class="mini par" href="https://www.linkedin.com/in/leonardo-daniel-sc/" data-reveal>
+                            <span class="mini__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="3" />
+                                    <path
+                                        d="M8 10.5V16M8 7.8v.01M11.5 16v-5.5M11.5 12.5c0-1.4 1-2.2 2.3-2.2 1.4 0 2.200.9 2.200 2.400V16" />
+                                </svg></span>
+                            <h3>LinkedIn</h3>
+                        </a>
+                        <a class="mini impar" href="https://github.com/Leonardo-Daniel-SC" data-reveal>
+                            <span class="mini__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                </svg></span>
+                            <h3>GitHub</h3>
+                        </a>
+                        <a class="mini par" href="https://web.whatsapp.com/send?phone=5577991061635" data-reveal>
+                            <span class="mini__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 21l1.6-4.8A8.500 8.500 0 118 19.500z" />
+                                    <path
+                                        d="M9 8.500c0 3.500 3 6.500 6.500 6.500l1-1.500-2-1-1 .8c-1-.5-2-1.500-2.500-2.500l.8-1-1-2z" />
+                                </svg></span>
+                            <h3>WhatsApp</h3>
+                        </a>
+                        <a class="mini impar" href="https://www.instagram.com/leonardo_daniel_sc/" data-reveal>
+                            <span class="mini__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <path d="M17.5 6.5v.01" />
+                                </svg></span>
+                            <h3>Instagram</h3>
+                        </a>
+                        <a class="mini email" href="mailto:leonardodanielcode@gmail.com" data-reveal>
+                            <span class="mini__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2.5" />
+                                    <path d="M3.5 7l8.5 6 8.5-6" />
+                                </svg></span>
+                            <h3>E-mail</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer__row">
+            <p>© 2026 Leonardo Daniel. Todos os direitos reservados.</p>
+            <a href="#inicio">Voltar ao topo <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 19V5M6 11l6-6 6 6" />
+                </svg></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
