@@ -3,12 +3,12 @@
   var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   root.classList.add('js');
 
-  /* Links ainda sem destino não rolam a página para o topo */
+  // Links ainda sem destino não rolam a página para o topo
   Array.prototype.forEach.call(document.querySelectorAll('a[href="#"]'), function (a) {
     a.addEventListener('click', function (e) { e.preventDefault(); });
   });
 
-  /* Efeito de digitar e apagar */
+  // Efeito de digitar e apagar
   var typed = document.getElementById('typed');
   var phrases = ['Desenvolvedor Back-end.', 'Computação em nuvem.', 'Transformando sistemas.'];
   var pi = 0, ci = phrases[0].length, deleting = true;
@@ -23,7 +23,7 @@
   }
   if (typed && !reduce) { setTimeout(tick, 2200); }
 
-  /* Atraso escalonado nos grupos de cards */
+  // Atraso escalonado nos grupos de cards
   Array.prototype.forEach.call(document.querySelectorAll('[data-stagger]'), function (group) {
     var step = parseFloat(group.getAttribute('data-stagger')) || 0.09;
     Array.prototype.forEach.call(group.children, function (child, i) {
@@ -31,7 +31,7 @@
     });
   });
 
-  /* Revelação ao rolar */
+  // Revelação ao rolar
   var items = document.querySelectorAll('[data-reveal]');
   if (reduce || !('IntersectionObserver' in window)) {
     Array.prototype.forEach.call(items, function (el) { el.classList.add('is-in'); });
@@ -44,7 +44,7 @@
     Array.prototype.forEach.call(items, function (el) { io.observe(el); });
   }
 
-  /* Projetos extras */
+  // Projetos extras
   var more = document.getElementById('more-projects');
   var toggle = document.getElementById('toggle-projects');
   var label = document.getElementById('toggle-label');
@@ -73,7 +73,7 @@
     }
   });
 
-  /* Menu no celular */
+  // Menu no celular
   var header = document.getElementById('header');
   var menuBtn = document.getElementById('menu-btn');
   var nav = document.getElementById('nav');
@@ -87,7 +87,7 @@
   var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
   links.forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
 
-  /* Link ativo conforme a seção visível */
+  // Link ativo conforme a seção visível
   if ('IntersectionObserver' in window) {
     var so = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
@@ -102,7 +102,7 @@
     });
   }
 
-  /* Efeitos ligados ao scroll: barra de progresso, cabeçalho, faixa e brilho do hero */
+  // Efeitos ligados ao scroll: barra de progresso, cabeçalho, faixa e brilho do hero
   var lastY = window.scrollY || 0, ticking = false;
   function update() {
     var y = window.scrollY || 0;
@@ -123,7 +123,7 @@
   window.addEventListener('resize', update);
   update();
 
-  /* Brilho que acompanha o cursor nos cards */
+  // Brilho que acompanha o cursor nos cards
   Array.prototype.forEach.call(document.querySelectorAll('.card, .mini'), function (el) {
     el.addEventListener('pointermove', function (e) {
       var r = el.getBoundingClientRect();
@@ -131,11 +131,4 @@
       el.style.setProperty('--my', (e.clientY - r.top) + 'px');
     });
   });
-
-  /* Parallax do orb do hero */
-  const orb = document.querySelector('.hero-orb');
-  function updateOrb(x, y) {
-    // Sempre parte do ponto central (-50%, -50%)
-    orb.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-  }
 })();
